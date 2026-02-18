@@ -698,69 +698,69 @@ Di **[Chapter 2](../chapter-2/README.md)**, kamu akan belajar:
 > Ubah `[ ]` menjadi `[x]` untuk menandai selesai.
 
 ### Persiapan Lingkungan
-- [ ] Menginstal Node.js dan npm
-- [ ] Menginstal Docker Desktop
-- [ ] Menginstal ekstensi Prisma di VS Code
+- [x] Menginstal Node.js dan npm
+- [x] Menginstal Docker Desktop
+- [x] Menginstal ekstensi Prisma di VS Code
 
 ### Setup Proyek NestJS
-- [ ] Membuat proyek baru dengan `npx @nestjs/cli new .`
-- [ ] Menjalankan server development (`npm run start:dev`)
-- [ ] Mengakses `http://localhost:3000` dan melihat "Hello World!"
+- [x] Membuat proyek baru dengan `npx @nestjs/cli new .`
+- [x] Menjalankan server development (`npm run start:dev`)
+- [x] Mengakses `http://localhost:3000` dan melihat "Hello World!"
 
 ### Setup Database PostgreSQL
-- [ ] Membuat file `docker-compose.yml`
-- [ ] Menjalankan container PostgreSQL dengan `docker-compose up`
-- [ ] Memverifikasi database berjalan di port 5432
+- [x] Membuat file `docker-compose.yml`
+- [x] Menjalankan container PostgreSQL dengan `docker-compose up`
+- [x] Memverifikasi database berjalan di port 5432
 
 ### Setup Prisma
-- [ ] Menginstal Prisma CLI (`npm install -D prisma`)
-- [ ] Menginisialisasi Prisma (`npx prisma init`)
-- [ ] Mengonfigurasi `DATABASE_URL` di file `.env`
+- [x] Menginstal Prisma CLI (`npm install -D prisma`)
+- [x] Menginisialisasi Prisma (`npx prisma init`)
+- [x] Mengonfigurasi `DATABASE_URL` di file `.env`
 
 ### Model Data & Migrasi
-- [ ] Membuat model `Article` di `prisma/schema.prisma`
-- [ ] Menjalankan migrasi pertama (`npx prisma migrate dev --name "init"`)
-- [ ] Memverifikasi tabel `Article` berhasil dibuat
+- [x] Membuat model `Article` di `prisma/schema.prisma`
+- [x] Menjalankan migrasi pertama (`npx prisma migrate dev --name "init"`)
+- [x] Memverifikasi tabel `Article` berhasil dibuat
 
 ### Seed Database
-- [ ] Membuat file `prisma/seed.ts`
-- [ ] Menambahkan konfigurasi seed di `package.json`
-- [ ] Menjalankan seed (`npx prisma db seed`)
-- [ ] Memverifikasi data berhasil masuk ke database
+- [x] Membuat file `prisma/seed.ts`
+- [x] Menambahkan konfigurasi seed di `package.json`
+- [x] Menjalankan seed (`npx prisma db seed`)
+- [x] Memverifikasi data berhasil masuk ke database
 
 ### Prisma Service
-- [ ] Membuat Prisma module (`npx nest generate module prisma`)
-- [ ] Membuat Prisma service (`npx nest generate service prisma`)
-- [ ] Mengonfigurasi `PrismaService` extends `PrismaClient`
-- [ ] Menambahkan `PrismaService` ke `exports` di `PrismaModule`
+- [x] Membuat Prisma module (`npx nest generate module prisma`)
+- [x] Membuat Prisma service (`npx nest generate service prisma`)
+- [x] Mengonfigurasi `PrismaService` extends `PrismaClient`
+- [x] Menambahkan `PrismaService` ke `exports` di `PrismaModule`
 
 ### Swagger
-- [ ] Menginstal dependensi Swagger (`@nestjs/swagger`, `swagger-ui-express`)
-- [ ] Mengonfigurasi Swagger di `main.ts`
-- [ ] Mengakses Swagger UI di `http://localhost:3000/api`
+- [x] Menginstal dependensi Swagger (`@nestjs/swagger`, `swagger-ui-express`)
+- [x] Mengonfigurasi Swagger di `main.ts`
+- [x] Mengakses Swagger UI di `http://localhost:3000/api`
 
 ### CRUD Articles
-- [ ] Membuat resource Articles (`npx nest generate resource`)
-- [ ] Mengimpor `PrismaModule` di `ArticlesModule`
-- [ ] Mengimplementasikan `POST /articles` (Create)
-- [ ] Mengimplementasikan `GET /articles` (Read All - Published)
-- [ ] Mengimplementasikan `GET /articles/drafts` (Read All - Drafts)
-- [ ] Mengimplementasikan `GET /articles/:id` (Read One)
-- [ ] Mengimplementasikan `PATCH /articles/:id` (Update)
-- [ ] Mengimplementasikan `DELETE /articles/:id` (Delete)
+- [x] Membuat resource Articles (`npx nest generate resource`)
+- [x] Mengimpor `PrismaModule` di `ArticlesModule`
+- [x] Mengimplementasikan `POST /articles` (Create)
+- [x] Mengimplementasikan `GET /articles` (Read All - Published)
+- [x] Mengimplementasikan `GET /articles/drafts` (Read All - Drafts)
+- [x] Mengimplementasikan `GET /articles/:id` (Read One)
+- [x] Mengimplementasikan `PATCH /articles/:id` (Update)
+- [x] Mengimplementasikan `DELETE /articles/:id` (Delete)
 
 ### Swagger Response Types
-- [ ] Membuat `ArticleEntity` dengan decorator `@ApiProperty`
-- [ ] Menambahkan `@ApiOkResponse` / `@ApiCreatedResponse` ke setiap endpoint
-- [ ] Menambahkan `@ApiTags('articles')` ke controller
-- [ ] Memverifikasi response types muncul di Swagger UI
+- [x] Membuat `ArticleEntity` dengan decorator `@ApiProperty`
+- [x] Menambahkan `@ApiOkResponse` / `@ApiCreatedResponse` ke setiap endpoint
+- [x] Menambahkan `@ApiTags('articles')` ke controller
+- [x] Memverifikasi response types muncul di Swagger UI
 
 ### ✅ Status Chapter 1
-- [ ] **SEMUA LANGKAH SELESAI** — Chapter 1 telah dikerjakan seluruhnya
+- [x] **SEMUA LANGKAH SELESAI** — Chapter 1 telah dikerjakan seluruhnya
 
 | Item | Keterangan |
 |------|------------|
-| Nama | _________________________ |
-| NIM | _________________________ |
-| Tanggal | _________________________ |
-| Tanda Tangan | _________________________ |
+| Nama | Nurul Insani Alimin |
+| NIM | 105841108321 |
+| Tanggal | 18 Februari 2026 |
+| Tanda Tangan | NurulInsaniAlimin |

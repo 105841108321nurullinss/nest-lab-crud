@@ -556,42 +556,42 @@ Di **[Chapter 3](../chapter-3/README.md)**, kamu akan belajar:
 > Ubah `[ ]` menjadi `[x]` untuk menandai selesai.
 
 ### Part A: Validasi Input
-- [ ] Menginstal `class-validator` dan `class-transformer`
-- [ ] Mengaktifkan `ValidationPipe` secara global di `main.ts`
-- [ ] Menambahkan decorator validasi ke `CreateArticleDto` (`@IsNotEmpty`, `@IsString`, `@IsBoolean`, dll)
-- [ ] Menguji validasi — mengirim body kosong dan melihat error 400
-- [ ] Menguji validasi — mengirim tipe data yang salah dan melihat error 400
-- [ ] Mengaktifkan opsi `whitelist: true` di `ValidationPipe`
-- [ ] Menguji whitelist — mengirim field tambahan dan memverifikasi field tersebut dibuang
+- [x] Menginstal `class-validator` dan `class-transformer`
+- [x] Mengaktifkan `ValidationPipe` secara global di `main.ts`
+- [x] Menambahkan decorator validasi ke `CreateArticleDto` (`@IsNotEmpty`, `@IsString`, `@IsBoolean`, dll)
+- [x] Menguji validasi — mengirim body kosong dan melihat error 400
+- [x] Menguji validasi — mengirim tipe data yang salah dan melihat error 400
+- [x] Mengaktifkan opsi `whitelist: true` di `ValidationPipe`
+- [x] Menguji whitelist — mengirim field tambahan dan memverifikasi field tersebut dibuang
 
 ### Part B: Transformasi Parameter
-- [ ] Menambahkan `ParseIntPipe` ke parameter `id` di endpoint `GET /articles/:id`
-- [ ] Menambahkan `ParseIntPipe` ke parameter `id` di endpoint `PATCH /articles/:id`
-- [ ] Menambahkan `ParseIntPipe` ke parameter `id` di endpoint `DELETE /articles/:id`
-- [ ] Menguji — mengirim `id` berupa string (contoh: `abc`) dan melihat error 400
-- [ ] Menguji — mengirim `id` berupa angka dan memverifikasi berhasil
+- [x] Menambahkan `ParseIntPipe` ke parameter `id` di endpoint `GET /articles/:id`
+- [x] Menambahkan `ParseIntPipe` ke parameter `id` di endpoint `PATCH /articles/:id`
+- [x] Menambahkan `ParseIntPipe` ke parameter `id` di endpoint `DELETE /articles/:id`
+- [x] Menguji — mengirim `id` berupa string (contoh: `abc`) dan melihat error 400
+- [x] Menguji — mengirim `id` berupa angka dan memverifikasi berhasil
 
 ### Part C: Error Handling
-- [ ] Menambahkan `NotFoundException` di `findOne` (ketika artikel tidak ditemukan)
-- [ ] Menguji — mengakses artikel yang tidak ada dan melihat error 404
-- [ ] Membuat file `PrismaClientExceptionFilter`
-- [ ] Menangani error `P2002` (Unique constraint violation) → 409 Conflict
-- [ ] Menangani error `P2025` (Record not found) → 404 Not Found
-- [ ] Mendaftarkan `PrismaClientExceptionFilter` secara global di `main.ts`
-- [ ] Menguji — membuat artikel dengan judul duplikat dan melihat error 409
-- [ ] Menguji — mengupdate/menghapus artikel yang tidak ada dan melihat error 404
+- [x] Menambahkan `NotFoundException` di `findOne` (ketika artikel tidak ditemukan)
+- [x] Menguji — mengakses artikel yang tidak ada dan melihat error 404
+- [x] Membuat file `PrismaClientExceptionFilter`
+- [x] Menangani error `P2002` (Unique constraint violation) → 409 Conflict
+- [x] Menangani error `P2025` (Record not found) → 404 Not Found
+- [x] Mendaftarkan `PrismaClientExceptionFilter` secara global di `main.ts`
+- [x] Menguji — membuat artikel dengan judul duplikat dan melihat error 409
+- [x] Menguji — mengupdate/menghapus artikel yang tidak ada dan melihat error 404
 
 ### Verifikasi Akhir
-- [ ] Semua endpoint validasi berfungsi dengan benar
-- [ ] Error response menampilkan pesan yang jelas dan informatif
-- [ ] Tidak ada error 500 (Internal Server Error) yang tidak tertangani
+- [x] Semua endpoint validasi berfungsi dengan benar
+- [x] Error response menampilkan pesan yang jelas dan informatif
+- [x] Tidak ada error 500 (Internal Server Error) yang tidak tertangani
 
 ### ✅ Status Chapter 2
-- [ ] **SEMUA LANGKAH SELESAI** — Chapter 2 telah dikerjakan seluruhnya
+- [x] **SEMUA LANGKAH SELESAI** — Chapter 2 telah dikerjakan seluruhnya
 
 | Item | Keterangan |
 |------|------------|
-| Nama | _________________________ |
-| NIM | _________________________ |
-| Tanggal | _________________________ |
-| Tanda Tangan | _________________________ |
+| Nama | Nurul Insani Alimin |
+| NIM | 105841108321 |
+| Tanggal | 20 Februari 2026 |
+| Tanda Tangan | NurulInsaniAlimin |

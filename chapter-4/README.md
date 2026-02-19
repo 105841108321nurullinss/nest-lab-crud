@@ -890,66 +890,66 @@ Kamu telah menyelesaikan seluruh series! Sekarang kamu memiliki **REST API yang 
 > Ubah `[ ]` menjadi `[x]` untuk menandai selesai.
 
 ### Part A: Setup Auth Module
-- [ ] Membuat resource Auth (`npx nest generate resource` → auth, REST API, No CRUD)
-- [ ] Menginstal dependensi Passport & JWT (`@nestjs/passport`, `passport`, `@nestjs/jwt`, `passport-jwt`)
-- [ ] Menginstal type definitions (`@types/passport-jwt`)
-- [ ] Mengonfigurasi `AuthModule` dengan `PassportModule` dan `JwtModule.register()`
-- [ ] Mengatur `jwtSecret` dan `expiresIn: '5m'`
+- [x] Membuat resource Auth (`npx nest generate resource` → auth, REST API, No CRUD)
+- [x] Menginstal dependensi Passport & JWT (`@nestjs/passport`, `passport`, `@nestjs/jwt`, `passport-jwt`)
+- [x] Menginstal type definitions (`@types/passport-jwt`)
+- [x] Mengonfigurasi `AuthModule` dengan `PassportModule` dan `JwtModule.register()`
+- [x] Mengatur `jwtSecret` dan `expiresIn: '5m'`
 
 ### Part B: Login Endpoint
-- [ ] Membuat `LoginDto` dengan validasi (`@IsEmail`, `@IsNotEmpty`, `@MinLength`)
-- [ ] Membuat `AuthEntity` dengan field `accessToken`
-- [ ] Mengimplementasikan `AuthService.login()` — cari user, verifikasi password, generate token
-- [ ] Membuat `POST /auth/login` di `AuthController`
-- [ ] Menambahkan `@ApiTags('auth')` dan `@ApiOkResponse({ type: AuthEntity })`
-- [ ] Menguji login di Swagger — mengirim email & password yang benar
-- [ ] Menguji login — mengirim email yang tidak ada → melihat error 404
-- [ ] Menguji login — mengirim password yang salah → melihat error 401
+- [x] Membuat `LoginDto` dengan validasi (`@IsEmail`, `@IsNotEmpty`, `@MinLength`)
+- [x] Membuat `AuthEntity` dengan field `accessToken`
+- [x] Mengimplementasikan `AuthService.login()` — cari user, verifikasi password, generate token
+- [x] Membuat `POST /auth/login` di `AuthController`
+- [x] Menambahkan `@ApiTags('auth')` dan `@ApiOkResponse({ type: AuthEntity })`
+- [x] Menguji login di Swagger — mengirim email & password yang benar
+- [x] Menguji login — mengirim email yang tidak ada → melihat error 404
+- [x] Menguji login — mengirim password yang salah → melihat error 401
 
 ### Part C: Melindungi Endpoint dengan JWT
-- [ ] Membuat `JwtStrategy` (extends `PassportStrategy`)
-- [ ] Mengonfigurasi `ExtractJwt.fromAuthHeaderAsBearerToken()`
-- [ ] Mengimplementasikan method `validate()` di `JwtStrategy`
-- [ ] Menambahkan `JwtStrategy` ke `providers` di `AuthModule`
-- [ ] Mengimpor `UsersModule` di `AuthModule`
-- [ ] Menambahkan `exports: [UsersService]` di `UsersModule`
-- [ ] Membuat `JwtAuthGuard` (extends `AuthGuard('jwt')`)
-- [ ] Menerapkan `@UseGuards(JwtAuthGuard)` ke `GET /users`
-- [ ] Menerapkan `@UseGuards(JwtAuthGuard)` ke `GET /users/:id`
-- [ ] Menerapkan `@UseGuards(JwtAuthGuard)` ke `PATCH /users/:id`
-- [ ] Menerapkan `@UseGuards(JwtAuthGuard)` ke `DELETE /users/:id`
-- [ ] Memverifikasi `POST /users` tetap terbuka (tanpa guard)
-- [ ] Menguji — mengakses `GET /users` tanpa token → melihat error 401
+- [x] Membuat `JwtStrategy` (extends `PassportStrategy`)
+- [x] Mengonfigurasi `ExtractJwt.fromAuthHeaderAsBearerToken()`
+- [x] Mengimplementasikan method `validate()` di `JwtStrategy`
+- [x] Menambahkan `JwtStrategy` ke `providers` di `AuthModule`
+- [x] Mengimpor `UsersModule` di `AuthModule`
+- [x] Menambahkan `exports: [UsersService]` di `UsersModule`
+- [x] Membuat `JwtAuthGuard` (extends `AuthGuard('jwt')`)
+- [x] Menerapkan `@UseGuards(JwtAuthGuard)` ke `GET /users`
+- [x] Menerapkan `@UseGuards(JwtAuthGuard)` ke `GET /users/:id`
+- [x] Menerapkan `@UseGuards(JwtAuthGuard)` ke `PATCH /users/:id`
+- [x] Menerapkan `@UseGuards(JwtAuthGuard)` ke `DELETE /users/:id`
+- [x] Memverifikasi `POST /users` tetap terbuka (tanpa guard)
+- [x] Menguji — mengakses `GET /users` tanpa token → melihat error 401
 
 ### Part D: Integrasi Auth di Swagger
-- [ ] Menambahkan `.addBearerAuth()` di `DocumentBuilder` (`main.ts`)
-- [ ] Menambahkan `@ApiBearerAuth()` ke setiap endpoint yang dilindungi
-- [ ] Menguji di Swagger — login → copy token → klik Authorize → paste token
-- [ ] Menguji — mengakses endpoint yang dilindungi setelah authorize → berhasil 200
+- [x] Menambahkan `.addBearerAuth()` di `DocumentBuilder` (`main.ts`)
+- [x] Menambahkan `@ApiBearerAuth()` ke setiap endpoint yang dilindungi
+- [x] Menguji di Swagger — login → copy token → klik Authorize → paste token
+- [x] Menguji — mengakses endpoint yang dilindungi setelah authorize → berhasil 200
 
 ### Part E: Hashing Password dengan Bcrypt
-- [ ] Menginstal `bcrypt` dan `@types/bcrypt`
-- [ ] Memperbarui `UsersService.create()` — hash password sebelum simpan
-- [ ] Memperbarui `UsersService.update()` — hash password jika diubah
-- [ ] Memperbarui `prisma/seed.ts` — gunakan `bcrypt.hash()` untuk password
-- [ ] Menjalankan seed ulang (`npx prisma db seed`)
-- [ ] Memperbarui `AuthService.login()` — gunakan `bcrypt.compare()`
-- [ ] Menguji login setelah bcrypt — memverifikasi login masih berfungsi
-- [ ] Menguji — membuat user baru dan memverifikasi password tersimpan sebagai hash
+- [x] Menginstal `bcrypt` dan `@types/bcrypt`
+- [x] Memperbarui `UsersService.create()` — hash password sebelum simpan
+- [x] Memperbarui `UsersService.update()` — hash password jika diubah
+- [x] Memperbarui `prisma/seed.ts` — gunakan `bcrypt.hash()` untuk password
+- [x] Menjalankan seed ulang (`npx prisma db seed`)
+- [x] Memperbarui `AuthService.login()` — gunakan `bcrypt.compare()`
+- [x] Menguji login setelah bcrypt — memverifikasi login masih berfungsi
+- [x] Menguji — membuat user baru dan memverifikasi password tersimpan sebagai hash
 
 ### Verifikasi Akhir
-- [ ] Login berhasil dan mendapatkan JWT token
-- [ ] Endpoint yang dilindungi menolak request tanpa token (401)
-- [ ] Endpoint yang dilindungi menerima request dengan token valid (200)
-- [ ] Password tersimpan sebagai hash di database (bukan plain text)
-- [ ] Swagger Bearer Auth berfungsi dengan benar
+- [x] Login berhasil dan mendapatkan JWT token
+- [x] Endpoint yang dilindungi menolak request tanpa token (401)
+- [x] Endpoint yang dilindungi menerima request dengan token valid (200)
+- [x] Password tersimpan sebagai hash di database (bukan plain text)
+- [x] Swagger Bearer Auth berfungsi dengan benar
 
 ### ✅ Status Chapter 4
-- [ ] **SEMUA LANGKAH SELESAI** — Chapter 4 telah dikerjakan seluruhnya
+- [x] **SEMUA LANGKAH SELESAI** — Chapter 4 telah dikerjakan seluruhnya
 
 | Item | Keterangan |
 |------|------------|
-| Nama | _________________________ |
-| NIM | _________________________ |
-| Tanggal | _________________________ |
-| Tanda Tangan | _________________________ |
+| Nama | Nurul Insani Alimin |
+| NIM | 105841108321 |
+| Tanggal | 20 Februari 2026 |
+| Tanda Tangan | NurulInsaniAlimin |

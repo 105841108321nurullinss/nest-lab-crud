@@ -783,50 +783,50 @@ Di **[Chapter 4](../chapter-4/README.md)**, kamu akan belajar:
 > Ubah `[ ]` menjadi `[x]` untuk menandai selesai.
 
 ### Part A: Model User & Relasi
-- [ ] Menambahkan model `User` di `prisma/schema.prisma`
-- [ ] Menambahkan field `authorId` dan relasi `author` di model `Article`
-- [ ] Menjalankan migrasi (`npx prisma migrate dev --name "add-user-model"`)
-- [ ] Memverifikasi tabel `User` berhasil dibuat di database
-- [ ] Memperbarui `prisma/seed.ts` dengan data user (Sabin & Alex)
-- [ ] Menghubungkan artikel dengan author di seed script
-- [ ] Menjalankan seed ulang (`npx prisma db seed`)
-- [ ] Memverifikasi data user dan relasi berhasil masuk ke database
+- [x] Menambahkan model `User` di `prisma/schema.prisma`
+- [x] Menambahkan field `authorId` dan relasi `author` di model `Article`
+- [x] Menjalankan migrasi (`npx prisma migrate dev --name "add-user-model"`)
+- [x] Memverifikasi tabel `User` berhasil dibuat di database
+- [x] Memperbarui `prisma/seed.ts` dengan data user (Sabin & Alex)
+- [x] Menghubungkan artikel dengan author di seed script
+- [x] Menjalankan seed ulang (`npx prisma db seed`)
+- [x] Memverifikasi data user dan relasi berhasil masuk ke database
 
 ### Part B: CRUD Users
-- [ ] Membuat resource Users (`npx nest generate resource`)
-- [ ] Mengimpor `PrismaModule` di `UsersModule`
-- [ ] Membuat `UserEntity` dengan decorator `@ApiProperty`
-- [ ] Membuat `CreateUserDto` dengan validasi (`@IsNotEmpty`, `@IsEmail`, dll)
-- [ ] Mengimplementasikan `POST /users` (Create)
-- [ ] Mengimplementasikan `GET /users` (Read All)
-- [ ] Mengimplementasikan `GET /users/:id` (Read One)
-- [ ] Mengimplementasikan `PATCH /users/:id` (Update)
-- [ ] Mengimplementasikan `DELETE /users/:id` (Delete)
-- [ ] Menambahkan `@ApiTags('users')` dan response types ke controller
-- [ ] Menguji semua endpoint Users di Swagger
+- [x] Membuat resource Users (`npx nest generate resource`)
+- [x] Mengimpor `PrismaModule` di `UsersModule`
+- [x] Membuat `UserEntity` dengan decorator `@ApiProperty`
+- [x] Membuat `CreateUserDto` dengan validasi (`@IsNotEmpty`, `@IsEmail`, dll)
+- [x] Mengimplementasikan `POST /users` (Create)
+- [x] Mengimplementasikan `GET /users` (Read All)
+- [x] Mengimplementasikan `GET /users/:id` (Read One)
+- [x] Mengimplementasikan `PATCH /users/:id` (Update)
+- [x] Mengimplementasikan `DELETE /users/:id` (Delete)
+- [x] Menambahkan `@ApiTags('users')` dan response types ke controller
+- [x] Menguji semua endpoint Users di Swagger
 
 ### Part C: Menyembunyikan Password
-- [ ] Menambahkan `@Exclude()` pada field `password` di `UserEntity`
-- [ ] Menambahkan constructor di `UserEntity` (`constructor(partial: Partial<UserEntity>)`)
-- [ ] Membungkus response dengan `new UserEntity(...)` di setiap method controller
-- [ ] Mengaktifkan `ClassSerializerInterceptor` secara global di `main.ts`
-- [ ] Menguji — memverifikasi password TIDAK muncul di response `GET /users`
-- [ ] Menguji — memverifikasi password TIDAK muncul di response `GET /users/:id`
+- [x] Menambahkan `@Exclude()` pada field `password` di `UserEntity`
+- [x] Menambahkan constructor di `UserEntity` (`constructor(partial: Partial<UserEntity>)`)
+- [x] Membungkus response dengan `new UserEntity(...)` di setiap method controller
+- [x] Mengaktifkan `ClassSerializerInterceptor` secara global di `main.ts`
+- [x] Menguji — memverifikasi password TIDAK muncul di response `GET /users`
+- [x] Menguji — memverifikasi password TIDAK muncul di response `GET /users/:id`
 
 ### Part D: Relasi Author di Articles
-- [ ] Memperbarui `ArticleEntity` — menambahkan field `authorId` dan `author`
-- [ ] Memperbarui `ArticlesService.findOne` — menambahkan `include: { author: true }`
-- [ ] Memperbarui `ArticlesService.findAll` — menambahkan `include: { author: true }`
-- [ ] Memperbarui `ArticlesService.findDrafts` — menambahkan `include: { author: true }`
-- [ ] Menguji — memverifikasi field `author` muncul di response Article
-- [ ] Menguji — memverifikasi password author TIDAK muncul di response Article
+- [x] Memperbarui `ArticleEntity` — menambahkan field `authorId` dan `author`
+- [x] Memperbarui `ArticlesService.findOne` — menambahkan `include: { author: true }`
+- [x] Memperbarui `ArticlesService.findAll` — menambahkan `include: { author: true }`
+- [x] Memperbarui `ArticlesService.findDrafts` — menambahkan `include: { author: true }`
+- [x] Menguji — memverifikasi field `author` muncul di response Article
+- [x] Menguji — memverifikasi password author TIDAK muncul di response Article
 
 ### ✅ Status Chapter 3
-- [ ] **SEMUA LANGKAH SELESAI** — Chapter 3 telah dikerjakan seluruhnya
+- [x] **SEMUA LANGKAH SELESAI** — Chapter 3 telah dikerjakan seluruhnya
 
 | Item | Keterangan |
 |------|------------|
-| Nama | _________________________ |
-| NIM | _________________________ |
-| Tanggal | _________________________ |
-| Tanda Tangan | _________________________ |
+| Nama | Nurul Insani Alimin |
+| NIM | 105841108321 |
+| Tanggal | 20 Februari 2026 |
+| Tanda Tangan | NurulInsaniAlimin |
